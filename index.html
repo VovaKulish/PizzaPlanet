@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="page-wrap">
+    <header>
+        <div class="header wide-wrap ">
+            <nav class="left-side-header">
+                <a class="logo" style="background-image: url('img/graphics/logo_colored.svg');"></a>
+
+                <div class="header-menu">
+                    <a href="" class="active">Пицца</a>
+                    <a href="">Напитки</a>
+                    <a href="">Закуски</a>
+                    <a href="">Салаты</a>
+                    <a href="">Десерты</a>
+                </div>
+            </nav>
+            <div class="right-side-header">
+                <a href="#modal-callback" class="show-modal btn mini">Позвоните мне и примите заказ</a>
+
+                <div class="phone">
+                    <span class="phone-number">+375 29 81 20 947</span>
+                    <span class="working-hours">работаем с 10:00 до 22:00 Витебск</span>
+                </div>
+                <a href="#modal-bucket" class="show-bucket">
+                    <img class="bucket-image" src="img/graphics/cart_hover.svg" alt="bucket">
+                    <span class="total-price">75.00 р</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="content-header">
+            <h1 class="big">Доставим пиццу по <span class="red italic">Витебску</span><br/>
+                за 30 минут — или отдадим бесплатно</h1>
+        </div>
+        <div class="goods wide-wrap">
+            <div class="item big">
+                <a href="">
+                    <div class="sale">
+                        <p class="sale-value">-20%</p>
+                    </div>
+                    <div class="special-pic">
+                    </div>
+                </a>
+
+                <div class="set-desc">
+                    <div class="set-header">
+                        <h1>Набор «Хаус-пати»</h1>
+
+                        <p>Вместе — дешевле! 2 большие маргариты и мясная, 4 литра кока-колы. Веселая компания будет в
+                            восторге!</p>
+                    </div>
+                    <div class="set-description">
+                        <a class="btn price">+ 120.00 р</a>
+
+                        <span class="tip">покупая набор,<br/>
+                            экономите 30.00 р</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="product.html" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/margherita.jpg" alt="margherita">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Маргарита с томатами</h2>
+
+                        <p class="pizza-description">Томаты, увеличенная порция моцареллы, орегано, томатный соус.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="first-checkbox">
+                            <div class="diameter-col left active clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">30</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">400 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr" >
+                                        <input type="checkbox" id="first-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">45</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">650 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/pepperoni.jpg" alt="pepperoni">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Пепперони</h2>
+
+                        <p class="pizza-description">Томатный соус, пепперони, увеличенная порция моцареллы.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="second-checkbox">
+                            <div class="diameter-col left clr active">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">30</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">400 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr">
+                                        <input type="checkbox" id="second-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">45</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">650 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/vegetarian.jpg" alt="vegetarian">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Вегетарианская</h2>
+
+                        <p class="pizza-description">Брынза, маслины, сладкий перец, томаты, шампиньоны, красный лук,
+                            моцарелла, базилик, томатный соус.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="third-checkbox">
+                            <div class="diameter-col left active clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">25</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">300 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr">
+                                        <input type="checkbox" id="third-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">45</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">650 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/meat.jpg" alt="meat">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Мясная</h2>
+
+                        <p class="pizza-description">Охотничьи колбаски, бекон, ветчина, моцарелла, томатный соус.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="fourth-checkbox">
+                            <div class="diameter-col left active clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">30</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">400 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr">
+                                        <input type="checkbox" id="fourth-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">40</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">800 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/fish.jpg" alt="fish">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Морская</h2>
+
+                        <p class="pizza-description">Креветки, маслины, сладкий перец, красный лук, моцарелла, томатный
+                            соус.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="fifth-checkbox">
+                            <div class="diameter-col left active clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">30</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">400 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr">
+                                        <input type="checkbox" id="fifth-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">45</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">650 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <img class="pizza-image" src="img/products/salsa.jpg" alt="salsa">
+                    </div>
+                    <div class="pizza-descr">
+                        <h2 class="pizza-header">Сальса</h2>
+
+                        <p class="pizza-description">Колбаски чоризо, соус Сальса, шампиньоны, моцарелла, томатный
+                            соус.</p>
+                    </div>
+                </a>
+
+                <div class="pizza-buy clr">
+                    <div class="diameters left">
+                        <label for="sixth-checkbox">
+                            <div class="diameter-col left active clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter small">30</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">400 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <label class="switch block clr">
+                                        <input type="checkbox" id="sixth-checkbox">
+
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="diameter-col left clr">
+                                <div class="diameter-cell">
+                                    <span class="diameter big">40</span>
+
+                                    <div class="diameter-cell">
+                                        <span class="italic weight">650 г</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="add-button right">
+                        <a class="btn price">+ 15.00 р</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="drinks">
+        <h1>Что будете пить?</h1>
+
+        <div class="drink-buttons">
+            <a class="btn small active">
+                <div class="lines"></div>
+                Все</a>
+            <a class="btn small">Соки</a>
+            <a class="btn small">Коктейли</a>
+            <a class="btn small">Вода</a>
+            <a class="btn small">Газированные</a>
+            <a class="btn small">Алкоголь</a>
+        </div>
+        <div class="drink-products mini-wrap">
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Апельсиновый сок</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/rich_orange.jpg" alt="Апельсиновый сок"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="first-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="first-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 3.30 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Яблочный</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/rich_apple.jpg" alt="Яблочный сок"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="second-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="second-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 3.30 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Пепси</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/pepsi.jpg" alt="Пепси"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="third-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="third-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 2.00 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Вода Бонаква</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/bonaqua.jpg" alt="Вода Бонаква"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="fourth-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="fourth-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 1.60 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Мультифрукт</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/rich_multi.jpg" alt="Мультифрукт"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="fifth-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="fifth-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 3.30 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Пиво Stella Artois</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/stella_artois.jpg" alt="Пиво Stella Artois"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <span>1.25 л</span>
+                </div>
+                <div>
+                    <a class="btn price">+ 2.00 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Вино красное</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/vine.jpg" alt="Вино красное"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <span>1.25 л</span>
+                </div>
+                <div>
+                    <a class="btn price">+ 2.70 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Виншневый</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/rich_cherry.jpg" alt="Виншневый"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="sixth-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="sixth-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 3.30 р</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <div>
+                        <h2>Томатный</h2>
+                    </div>
+                    <div class="drink-image">
+                        <img src="img/products/rich_tomato.jpg" alt="Томатный"/>
+                    </div>
+                </a>
+
+                <div class="quantity">
+                    <label for="seventh-drink">
+                        <span class="quantity active">1л</span>
+                        <label class="switch">
+                            <input type="checkbox" id="seventh-drink">
+
+                            <div class="slider round"></div>
+                        </label>
+                        <span class="quantity">2л</span>
+                    </label>
+                </div>
+                <div>
+                    <a class="btn price">+ 3.30 р</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="snacks">
+        <h1>Что на закуску?</h1>
+
+        <div class="snack-types mini-wrap">
+            <div class="item left">
+                <a href="" class="hover-link">
+                    <h2>Картофельные дольки</h2>
+
+                    <div class="snack-image">
+                        <img src="img/products/potato_chips.jpg" alt="Картофельные дольки"/>
+                    </div>
+                </a>
+
+                <div class="hot-snacks">
+                    <input type="checkbox" id="potato">
+                    <label for="potato"></label>
+                    <label for="potato"><span>хочу острые</span></label>
+                </div>
+                <div class="snack-add">
+                    <a class="btn price">+ 3.50 р</a>
+                    <span class="italic">350 г</span>
+                </div>
+                <div class="snack-descr">
+                    <span class="tip">Нежно порезанная картошка, острая приправа и соус — отличный быстрый перекус. Вкусно с пиво или газированными напитками.</span>
+                </div>
+            </div>
+            <div class="item left">
+                <a href="" class="hover-link">
+                    <h2>Крылышки гриль</h2>
+
+                    <div class="snack-image">
+                        <img src="img/products/grill.jpg" alt="Крылышки гриль"/>
+                    </div>
+                </a>
+
+                <div class="hot-snacks">
+                    <input type="checkbox" id="grill">
+                    <label for="grill"></label>
+                    <label for="grill"><span>хочу острые</span></label>
+                </div>
+                <div class="snack-add">
+                    <a class="btn price">+ 5.00 р</a>
+                    <span class="italic">170 г</span>
+                </div>
+                <div class="snack-descr">
+                    <span class="tip">Сочные куриные крылышки гриль, приправленные ароматным перцом вместе с острым соусом.</span>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <h2>Салат Цезарь</h2>
+
+                    <div class="snack-image image-caesar">
+                        <img src="img/products/caesar.jpg" alt="Салат Цезарь"/>
+                    </div>
+                </a>
+
+                <div class="snack-add">
+                    <a class="btn price">+ 5.50 р</a>
+                    <span class="italic">200 г</span>
+                </div>
+                <div class="snack-descr">
+                    <span class="tip">Нежное куриного филе, хрустящие листья пекинского салата, сыр Пармезан, золотистые сухарики и неповторимый вкус оригинального соуса Цезарь.</span>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <h2>Салат Греческий</h2>
+
+                    <div class="image-greek"></div>
+                </a>
+
+                <div class="snack-add">
+                    <a class="btn price">+ 5.50 р</a>
+                    <span class="italic">200 г</span>
+                </div>
+                <div class="snack-descr">
+                    <span class="tip">Сочные помидоры, оливки, нежная брынза, орегано, хрустящие листья пекинского салата.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="desserts">
+        <h1>Как на счет сладкого?</h1>
+
+        <div class="desert-types mini-wrap">
+            <div class="item">
+                <a href="" class="hover-link">
+                    <h2>Чизкейк «Нью-Йорк»</h2>
+
+                    <div class="desert-image">
+                        <img src="img/products/cheese_cake.jpg" alt="Чизкейк «Нью-Йорк»"/>
+                    </div>
+                </a>
+
+                <div class="desert-add">
+                    <a class="btn price">+ 3.00 р</a>
+                    <span class="italic">140 г</span>
+                </div>
+                <div class="desert-descr">
+                    <span class="tip">Творожный десерт из сливочного <br>сыра Москарпоне.</span>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <h2>Печенье</h2>
+
+                    <div class="desert-image">
+                        <img src="img/products/cookies.jpg" alt="Печенье"/>
+                    </div>
+                </a>
+
+                <div class="desert-add">
+                    <a class="btn price">+ 1.00 р</a>
+                    <span class="italic">100 г</span>
+                </div>
+                <div class="desert-descr">
+                    <span class="tip">Белый бисквит, глазурь, карамель</span>
+                </div>
+            </div>
+            <div class="item">
+                <a href="" class="hover-link">
+                    <h2>Мороженое белое</h2>
+
+                    <div class="desert-image ice-cream"></div>
+                </a>
+
+                <div class="desert-variants">
+                    <a href="" class="active" style="background-image: url('img/products/icecream_white.jpg')">
+                    </a>
+                    <a href="" style="background-image: url('img/products/icecream_chocolate.png');">
+                    </a>
+                    <a href="" style="background-image: url('img/products/icecream_strawberry.jpg');">
+                    </a>
+                </div>
+
+                <div class="desert-add">
+                    <a class="btn price">+ 2.50 р</a>
+                    <span class="italic">150 г</span>
+                </div>
+                <div class="desert-descr">
+                    <span class="tip">Белый бисквит, глазурь, карамель</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="wide-wrap">
+    <div class="footer">
+        <div class="contacts">
+            <a class="logo" style="background-image: url('img/graphics/logo_colored.svg');"></a>
+            <ul class="footer-menu">
+                <li><a href="">Пиццерия</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Конфиденциальность</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="socials">
+            <a target="_blank" href="https://www.instagram.com/pizzplanet/" class="instagram" style="background-image: url('img/graphics/in.svg');">
+
+            </a>
+            <a target="_blank" href="https://vk.com/public101745007" class="vk" style="background-image: url('img/graphics/vk.svg');">
+
+            </a>
+            <a target="_blank" href="https://www.facebook.com/pizzplanet/" class="facebook" style="background-image: url('img/graphics/fb.svg');">
+
+            </a>
+        </div>
+        <div class="studius">
+            <a target="_blank" href="http://ru.thestudi.us" class="hover-studius">
+                <img class="studius-logo" src="img/graphics/studius_red.svg" alt="studius">
+                <span>сделано в «Студиусе»<br/>2016</span>
+            </a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2016 Pizza Planet. ИП «Иванов В.»</p>
+    </div>
+</footer>
+<div id="modal-callback">
+    <div class="callback-window">
+        <h1>Заказать по телефону</h1>
+
+        <a class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M91.368,95c-0.929,0-1.859-0.355-2.568-1.064L6.063,11.2c-1.419-1.417-1.419-3.719,0-5.136    c1.419-1.419,3.718-1.419,5.137,0L93.937,88.8c1.419,1.417,1.419,3.719,0,5.136C93.227,94.646,92.297,95,91.368,95z"/></g><g><path d="M8.632,95c-0.929,0-1.859-0.355-2.568-1.064c-1.419-1.417-1.419-3.719,0-5.136L88.8,6.063    c1.419-1.419,3.718-1.419,5.137,0c1.419,1.417,1.419,3.719,0,5.136L11.2,93.936C10.491,94.646,9.561,95,8.632,95z"/></g></g></svg>
+
+        </a>
+
+        <div class="callback-decr">
+            <p>Оставьте свой номер телефона. В течение 10 минут <br/>мы позвоним, чтобы принять заказ.</p>
+        </div>
+        <span>Номер телефона</span>
+
+        <div class="callback-form">
+            <input type="text" value="+375 "/>
+
+            <button class="btn">Позвоните мне</button>
+        </div>
+    </div>
+    <div class="background-callback"></div>
+</div>
+<div id="modal-bucket">
+    <div class="bucket-window">
+        <h1>Ваш заказ</h1>
+
+        <div class="bucket-content">
+
+            <div class="item">
+                <a class="bucket-main hover-link" href="product.html">
+                    <div class="bucket-item-image">
+                        <img src="./img/products/margherita.jpg" alt="" />
+                    </div>
+                    <div class="bucket-descr">
+                        <div class="item-header">
+                            <h3 class="pt-sans">Маргарита с томатами</h3>
+                        </div>
+
+                        <div class="item-description">
+                            <p>Томаты, увеличенная порция моцареллы, орегано, томатный соус.</p>
+                        </div>
+                        <div class="item-weight">
+                            <span>30 см, 600 г </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-delete">
+                    <a class="delete">
+                        Удалить
+                    </a>
+                </div>
+                <div class="item-quantity">
+                    <input class="minmax minus-quantity" type="button" value="-">
+                    <input class="number" type="text" value="1"/>
+                    <input class="minmax plus-quantity" type="button" value="+">
+                    <div class="bucket-price">
+                        <span class="price">70.00 р</span>
+                    </div>
+                </div>
+                <div class="underline"></div>
+            </div>
+            <div class="item">
+                <a class="bucket-main hover-link" href="product.html">
+                    <div class="bucket-item-image">
+                        <img src="./img/products/margherita.jpg" alt="" />
+                    </div>
+                    <div class="bucket-descr">
+                        <div class="item-header">
+                            <h3 class="pt-sans">Маргарита с томатами</h3>
+                        </div>
+
+                        <div class="item-description">
+                            <p>Томаты, увеличенная порция моцареллы, орегано, томатный соус.</p>
+                        </div>
+                        <div class="item-weight">
+                            <span>30 см, 600 г </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-delete">
+                    <a class="delete">
+                        Удалить
+                    </a>
+                </div>
+                <div class="item-quantity">
+                    <input class="minmax minus-quantity" type="button" value="-">
+                    <input class="number" type="text" value="1"/>
+                    <input class="minmax plus-quantity" type="button" value="+">
+                    <div class="bucket-price">
+                        <span class="price">70.00 р</span>
+                    </div>
+                </div>
+                <div class="underline"></div>
+            </div>
+            <div class="item">
+                <a class="bucket-main hover-link" href="product.html">
+                    <div class="bucket-item-image">
+                        <img src="./img/products/margherita.jpg" alt="" />
+                    </div>
+                    <div class="bucket-descr">
+                        <div class="item-header">
+                            <h3 class="pt-sans">Набор «Хаус-пати»</h3>
+                        </div>
+
+                        <div class="item-description">
+                            <p>Маргарита с томатами — большая, 900 г
+                                Маргарита с томатами — большая, 900 г
+                                Фирменная «Пицца-плэнет» — 400 г <br/>
+                                Пепси 2л <br/>
+                                Пепси 2л</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="item-delete">
+                    <a class="delete">
+                        Удалить
+                    </a>
+                </div>
+                <div class="item-quantity">
+                    <input class="minmax minus-quantity" type="button" value="-">
+                    <input class="number" type="text" value="1"/>
+                    <input class="minmax plus-quantity" type="button" value="+">
+                    <div class="bucket-price">
+                        <span class="price">120.00 р</span>
+                    </div>
+                </div>
+                <div class="underline-last"></div>
+            </div>
+        </div>
+        <div class="total">
+            <a class="promo">Есть промокод?</a>
+            <h4>К оплате: 190.00 р</h4>
+        </div>
+            <a href="confirmation.html" class="right submit btn">Подтвердить заказ</a>
+    </div>
+    <div class="background-bucket"></div>
+</div>
+
+
+</body>
+</html>
